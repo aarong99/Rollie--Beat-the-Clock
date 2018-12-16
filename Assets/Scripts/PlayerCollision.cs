@@ -19,15 +19,4 @@ public class PlayerCollision : MonoBehaviour
 
         }
     }
-    private void destroyPickup(Collision pickup)
-    {
-
-        if (pickup.collider.tag == "Special"){
-            //
-            pickup.gameObject.SetActive(false);
-
-        }
-
-    }
-
 }

@@ -20,21 +20,19 @@ public class GameManager : MonoBehaviour
     }
 
     public void EndGame () {
-
+        //before game is over,
         if (gameHasEnded == false)
 
         {
-
+            //after game over trigger,
             gameHasEnded = true;
-
-            Debug.Log("Game Over");
-
+            //calls restart function
             Invoke("Restart", restartDelay);
         }
     }
 
     void Restart (){
-
+        //loads current scene again
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
 
     }
