@@ -2,8 +2,8 @@
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-
 public class Score : MonoBehaviour
+
 {
     public Text timeText;
 
@@ -12,6 +12,27 @@ public class Score : MonoBehaviour
     public float restartDelay = 1f;
 
     public bool gameHasEnded;
+
+
+
+    public GameManager gameManager;
+
+    public PlayerMovement movement;
+
+    public int sceneSave;
+
+    private void OnTriggerEnter()
+
+    {
+        //sceneSave = SceneManagement.GetActiveScene().buildIndex;
+        //run complete level when player enters end trigger
+        gameManager.CompleteLevel();
+
+
+
+    }
+
+
 
     void Start()
 

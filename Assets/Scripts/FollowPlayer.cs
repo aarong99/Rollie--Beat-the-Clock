@@ -10,7 +10,8 @@ public class FollowPlayer : MonoBehaviour {
 
 	void Update () {
         //camera follows player at offset position
-        transform.position = player.position + offset;
-
+        if (player != null){
+        	transform.position = player.position + offset;
+        }
 	}
 }
