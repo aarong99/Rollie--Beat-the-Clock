@@ -54,7 +54,6 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\clickSound.cs" />
-     <Compile Include="Assets\DontDestroy.cs" />
      <Compile Include="Assets\Scripts\DontDestroy.cs" />
      <Compile Include="Assets\Scripts\EndTrigger.cs" />
      <Compile Include="Assets\Scripts\FollowPlayer.cs" />
@@ -64,7 +63,6 @@
      <Compile Include="Assets\Scripts\PlayerCollision.cs" />
      <Compile Include="Assets\Scripts\PlayerMovement.cs" />
      <Compile Include="Assets\Scripts\Score.cs" />
-     <Compile Include="Assets\Scripts\volumeChange.cs" />
      <Compile Include="Assets\Scripts\volumeControl.cs" />
      <Compile Include="Assets\Stagit\SkyboxEarthPlanets\script\skyboxspace_demo_v1.cs" />
      <Compile Include="Assets\Stagit\SkyboxEarthPlanets\script\skyboxspace_mouselook_v1.cs" />

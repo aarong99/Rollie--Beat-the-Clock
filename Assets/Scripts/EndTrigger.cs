@@ -11,7 +11,7 @@ public class EndTrigger : MonoBehaviour {
 
     private void OnTriggerEnter()
     {
-    	sceneSave = SceneManagement.GetActiveScene().buildIndex;
+    	//sceneSave = SceneManagement.GetActiveScene().buildIndex;
         //run complete level when player enters end trigger
         gameManager.CompleteLevel();
 
