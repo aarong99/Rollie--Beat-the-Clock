@@ -2,9 +2,11 @@
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-public class Score : MonoBehaviour
+
+public class LComplete : MonoBehaviour
 
 {
+    //score members
     public Text timeText;
 
     public float currentTime;
@@ -13,26 +15,28 @@ public class Score : MonoBehaviour
 
     public bool gameHasEnded;
 
-
-
+    //end trigger members
     public GameManager gameManager;
 
     public PlayerMovement movement;
 
-    public int sceneSave;
-
-    private void OnTriggerEnter()
-
+    public void OnTriggerEnter()
     {
-        //sceneSave = SceneManagement.GetActiveScene().buildIndex;
-        //run complete level when player enters end trigger
-        gameManager.CompleteLevel();
 
-
-
+        if (currentTime <= 7.0)
+        {
+            //run ad
+            Debug.Log("Run ad");
+            gameManager.CompleteLevel();
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        }
+        else
+        {
+            Debug.Log("Don't run ad")
+            gameManager.CompleteLevel();
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        }
     }
-
-
 
     void Start()
 
@@ -41,7 +45,7 @@ public class Score : MonoBehaviour
         currentTime = 10f;
 
     }
-// Update is called once per frame
+    // Update is called once per frame
     void Update()
 
     {
@@ -50,7 +54,7 @@ public class Score : MonoBehaviour
 
         timeText.text = currentTime.ToString("0.0");
         //prints time up if time runs out
-        if (currentTime < 0f){
+        if (currentTime < 0f) {
 
             timeText.text = "TIME UP";
             //restarts the scene and player

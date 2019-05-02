@@ -1,21 +1,36 @@
-﻿<Properties StartupConfiguration="{39F7FFD4-6FCC-E253-908E-7BBB1698FB04}|">
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="Unity.Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/PlayerCollision.cs">
+﻿<Properties>
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/MainMenu.cs">
     <Files>
       <File FileName="Assets/Scripts/FollowPlayer.cs" Line="12" Column="51" />
       <File FileName="Assets/Scripts/PlayerCollision.cs" Line="8" Column="1" />
-      <File FileName="Assets/Scripts/EndTrigger.cs" Line="12" Column="60" />
+      <File FileName="Assets/Scripts/EndTrigger.cs" Line="12" Column="34" />
       <File FileName="Assets/Scripts/GameManager.cs" Line="35" Column="36" />
-      <File FileName="Assets/Scripts/Score.cs" Line="17" Column="5" />
+      <File FileName="Assets/Scripts/Score.cs" Line="24" Column="6" />
       <File FileName="Assets/Scripts/LevelComplete.cs" Line="5" Column="45" />
       <File FileName="Assets/Scripts/PlayerMovement.cs" Line="19" Column="15" />
       <File FileName="Assets/Scripts/MainMenu.cs" Line="6" Column="33" />
     </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Aaron's Project" expanded="True">
+            <Node name="Assembly-CSharp" expanded="True">
+              <Node name="Assets" expanded="True">
+                <Node name="Scripts" expanded="True">
+                  <Node name="MainMenu.cs" selected="True" />
+                </Node>
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
   </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="Unity.Editor" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MultiItemStartupConfigurations />
 </Properties>
